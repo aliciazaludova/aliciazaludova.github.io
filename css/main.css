@@ -1,0 +1,146 @@
+body {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 18px;
+    color: #301e1a;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+.content {
+    margin: 0 20px; /* not working. i want to put a margin on left and right for whole page but have the colors expand to the edges */
+  }
+  
+#invisible-header {
+    visibility: hidden;
+    width: 100%;
+    height: 80px;
+    background-color: #cccccc;
+    border-bottom: 10px solid #482d27;
+  }
+  
+#header {
+      position: fixed;
+      width: 100%;
+      height: 80px;
+      background-color: #cccccc;
+      border-bottom: 10px solid #482d27;
+      left: 0;
+      top: 0;
+  }
+  
+.navbar { /* need to figure out what i'm doing, exactly, w/ flex here -- the navbar doesn't stack upon minimizing */
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 30%;
+      padding: 0;
+  }
+  
+.nav-item {
+      flex: 0 1 auto;
+      display: inline-flex;
+      padding: 7px;
+      border: 3px solid greenyellow;
+      border-radius: 15px;
+      margin: 20px;
+      text-align: right;
+      width: 8%;
+      background-color: #D80000;
+      box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+.nav-item:hover {
+      background-color: #d9ffb3;
+    }
+  
+a {
+    font-size: 20px;
+    z-index: 2;
+    text-decoration: none;
+    color: #301e1a;
+    font-family: 'Bevan', cursive;
+  }
+  
+.intro, .backdrop, .jobs { /* there is the white space just above footer. i'd rectified it before the .backdrop divs were established. then it came back. */
+      padding: 2px 15px 5px 15px;
+      margin: 20px 50px;
+      background-color: #d6d6d6;
+      border-radius: 15px;
+      border-bottom: 5px solid greenyellow;
+      border-right: 2px solid  #D80000;
+  }
+  
+#imageWrapper { 
+      position: relative; 
+  }
+  
+ #bottomImage { 
+      position: absolute; 
+      bottom: 0;
+      right: 0; 
+      border-radius: 15px;
+      border-right: 3px solid greenyellow;
+  }
+  
+h1, h2, h3, h4, h5, h6 {
+      font-family: 'Bevan', cursive;
+  }
+  
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    margin-top: 1.5em;
+    margin-bottom: .2em
+}
+
+.standout {
+    font-weight: 900;
+    font-style: italic;
+}
+.container {
+    background: linear-gradient(
+    to right, 
+    #bec5b2 0%, 
+    #bec5b2 50%, 
+    #f1ea45 50%, 
+    #f1ea45 100%
+    );
+}
+
+.container p:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
+
+.container article:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+#footer {
+    background-color: #cccccc;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    /* position: absolute; on live site it makes it flush w edges but here it moves the whole footer up into the paragraphs */
+    left: 0;
+    bottom: 0;
+    border-top: 10px solid greenyellow;
+}
+
+#invisible-footer {
+    visibility: hidden;
+    background-color: #cccccc;
+    width: 100%;
+    height: 40px;
+    border-top: 10px solid greenyellow;
+}
+
+.linkedin-btn {
+    margin-left: 45px;
+}
