@@ -87,6 +87,7 @@ var blogs = [
 ];
 // Create two functions:
 // writeToDom: this function should accept a string and print it to a div with an id of my-projects
+// why writing this
 
 function printToDom(stringToPrint, divId) {
   // take string and innerHTML to the divID
@@ -95,6 +96,43 @@ function printToDom(stringToPrint, divId) {
   myDiv.innerHTML += stringToPrint;
 }
 
-printToDom(animalString, "pet-names"); // figure out how to apply; read jsObjectsFunctions code-along
+printToDom(blogString, "my-projects"); 
+// figure out by reviewing jsObjectsFunctions code-along below
+
 // createBlogPosts: this function should loop through the BLOGS array and build up the html for each blog. It should call the writeToDom function for each blog.
+
+
+// function createBlogPosts(animalArray) {
+//     // take petNames and create DOM string
+//     // call printToDom function
+//     for (var i = 0; i < animalArray.length; i++) {
+//         var animalString = "";
+//         if (animalArray[i].isFavorite) {
+//             animalString += '<div class="pet isFavorite">';
+//         } else if (animalArray[i].isNotFavorite) {
+//             animalString += '<div class="pet isNotFavorite">';
+//         } else {
+//             animalString += '<div class="pet">';
+//         }
+//         animalString += '<div class="pet">';
+//         animalString +=     "<h1>" + animalArray[i].petName + "</h1>";
+//         animalString +=     "<h3> Owner: " + animalArray[i].instructorName + "</h3>";
+//         animalString +=   "<h3> Type: " + animalArray[i].animalType + "</h3>";
+//         animalString += "</div>";
+
+//         // "<h1>" + animalArray[i].petName + "</h1>";
+//         // console.log("animalString", animalString);
+//     }
+// }
+
+// domStringMaker(instructorPets);
+
+function printToDom(stringToPrint, divId) {
+    // take string and innerHTML to the divID
+    var myDiv = document.getElementById(divId);
+    console.log("myDiv", myDiv);
+    myDiv.innerHTML += stringToPrint;
+}
+
+printToDom(animalString, "pet-names");
 // The last line of this file should be: createBlogPosts();
