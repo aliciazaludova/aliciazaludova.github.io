@@ -88,51 +88,34 @@ var blogs = [
 // Create two functions:
 // writeToDom: this function should accept a string and print it to a div with an id of my-projects
 // why writing this
-
-function printToDom(stringToPrint, divId) {
-  // take string and innerHTML to the divID
-  var myDiv = document.getElementById(divId);
-  console.log("myDiv", myDiv);
-  myDiv.innerHTML += stringToPrint;
-}
-
-printToDom(blogString, "my-projects"); 
+ 
 // figure out by reviewing jsObjectsFunctions code-along below
 
 // createBlogPosts: this function should loop through the BLOGS array and build up the html for each blog. It should call the writeToDom function for each blog.
-
-
-// function createBlogPosts(animalArray) {
-//     // take petNames and create DOM string
-//     // call printToDom function
-//     for (var i = 0; i < animalArray.length; i++) {
-//         var animalString = "";
-//         if (animalArray[i].isFavorite) {
-//             animalString += '<div class="pet isFavorite">';
-//         } else if (animalArray[i].isNotFavorite) {
-//             animalString += '<div class="pet isNotFavorite">';
-//         } else {
-//             animalString += '<div class="pet">';
-//         }
-//         animalString += '<div class="pet">';
-//         animalString +=     "<h1>" + animalArray[i].petName + "</h1>";
-//         animalString +=     "<h3> Owner: " + animalArray[i].instructorName + "</h3>";
-//         animalString +=   "<h3> Type: " + animalArray[i].animalType + "</h3>";
-//         animalString += "</div>";
-
-//         // "<h1>" + animalArray[i].petName + "</h1>";
-//         // console.log("animalString", animalString);
-//     }
-// }
-
-// domStringMaker(instructorPets);
-
-function printToDom(stringToPrint, divId) {
-    // take string and innerHTML to the divID
-    var myDiv = document.getElementById(divId);
-    console.log("myDiv", myDiv);
-    myDiv.innerHTML += stringToPrint;
+function printToDom(stuffToPrint, divId) {
+  // take string and innerHTML to the divID
+  var myDiv = document.getElementById(divId);
+  console.log("myDiv", myDiv);
+  myDiv.innerHTML += stuffToPrint;
 }
 
-printToDom(animalString, "pet-names");
+function createBlogPosts(blogArray) {
+    // take petNames and create DOM string
+    // call printToDom function
+    for (var i = 0; i < blogArray.length; i++) {
+        var blogContent = "";  // empties out the var which prevents it from compounding -- declares variable
+      
+        blogContent += '<div class="backdrop">';
+        blogContent +=     "<h2>" + blogArray[i].title + "</h2>";
+        blogContent +=     "<p><em>" + blogArray[i].theme + "</em></p>";
+        blogContent +=     "<p>" + blogArray[i].content + "</p>";
+        blogContent += "</div>";
+
+        printToDom(blogContent, "my-projects");
+
+    }
+}
+createBlogPosts(blogs);
+
+
 // The last line of this file should be: createBlogPosts();
