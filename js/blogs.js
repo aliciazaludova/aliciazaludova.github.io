@@ -90,15 +90,13 @@ var blogs = [
 // why writing this
  
 // figure out by reviewing jsObjectsFunctions code-along below
-
-// createBlogPosts: this function should loop through the BLOGS array and build up the html for each blog. It should call the writeToDom function for each blog.
-function printToDom(stuffToPrint, divId) {
+function writeToDom(stuffToPrint, divId) {
   // take string and innerHTML to the divID
   var myDiv = document.getElementById(divId);
   console.log("myDiv", myDiv);
   myDiv.innerHTML += stuffToPrint;
 }
-
+// createBlogPosts: this function should loop through the BLOGS array and build up the html for each blog. It should call the writeToDom function for each blog.
 function createBlogPosts(blogArray) {
     // take petNames and create DOM string
     // call printToDom function
@@ -111,7 +109,7 @@ function createBlogPosts(blogArray) {
         blogContent +=     "<p>" + blogArray[i].content + "</p>";
         blogContent += "</div>";
 
-        printToDom(blogContent, "my-projects");
+        writeToDom(blogContent, "my-projects");
 
     }
 }
@@ -119,3 +117,8 @@ createBlogPosts(blogs);
 
 
 // The last line of this file should be: createBlogPosts();
+
+// check if js file is linked right
+// are all functions being called properly
+// are the arguments you're sending them correct?
+// are all loops running through everything?
