@@ -1,10 +1,7 @@
-// all items i need to put in arrays have the class .backdrop
-
-// var arrayElements = document.getElementsByClassName("backdrop");
+// all items to be put into arrays have the class .backdrop
 
 // step one: have an array of blogs
-// step two: touch on each elements
-// have an array of projects
+// step two: touch on each element
 
 // Blogs Page
 // Creat a file called blogs.html in the same location as your index.html file
@@ -28,13 +25,13 @@ var blogs = [
     id: "blog3", 
     title: "Week 3", 
     theme: "Enter the flying monkey",
-    content: "JavaScript hovers over me like a flying monkey! I don't really want it to fly away; I just want it to become my pet. Everything is for loops and creating variables. I am getting used to the idea of a variable changing value as you progress through the code. JS is dynamic, afterall. It is a revelation to think about how a thing you defined at the beginning transforms to be something else at the end. I am not used to thinking about it code way. HTML is sort of like Dorothy's sleepy hometown in Kansas, and Javascript is Oz--the crazy land of the wacky and unexpected.."
+    content: "JavaScript hovers over me like a flying monkey! I don't really want it to fly away; I just want it to become my pet. Everything is for loops and creating variables. I am getting used to the idea of an element changing value as you progress through the code (because you make it do that!). JS is dynamic, afterall. To experienced programmers it must sound like I'm stating the obvious, but it is new for me to see an element I defined at the beginning transforming into something else at the end. I am not used to thinking about code that way. HTML is sort of like Dorothy's sleepy hometown in Kansas where nothing changes, and Javascript is Oz--the crazy land where stuff happens."
     },
     {
     id: "blog4", 
     title: "Week 4", 
     theme: "Teamwork is fun!",
-    content: "Our teams have been meeting for a few weeks now. I have a great team. Not only do we get stuff done but everyone is goofy and we have fun--I will spare you, gentle reader, a Wizard of Oz reference this time. But just this once. Everyone has something to contribute with our beginners' patchwork knowledge and we aren't afraid to ask each other for clarification when we need it. Regarding code, I have become aware that not everything is solved with a for loop. Too bad, since that is a snippet of code I have memorized. Functions and methods such as forEach do seem more economical. I'll sign off with one concern: Isn't it not-very-nice to call the arrow fat?"
+    content: "Our teams have been meeting for a few weeks now. I have a great team. Not only do we get stuff done but everyone is goofy and we have fun. I will spare you, gentle reader, a Wizard of Oz reference this time! But just this once. In our group work everyone has something to contribute with our beginners' patchwork knowledge and we aren't afraid to ask each other for clarification when we need it. Regarding code, I have become aware that not everything is solved with a for loop. Too bad, since that is a snippet of code I have memorized. Functions and methods such as forEach do seem more economical. I'll sign off with one concern: Isn't it not-very-nice to call the arrow fat?"
     },
     {
     id: "blog5", 
@@ -87,19 +84,14 @@ var blogs = [
 ];
 // Create two functions:
 // writeToDom: this function should accept a string and print it to a div with an id of my-projects
-// why writing this
  
-// figure out by reviewing jsObjectsFunctions code-along below
 function writeToDom(stuffToPrint, divId) {
-  // take string and innerHTML to the divID
+  // take string and innerHTML to the divId
   var myDiv = document.getElementById(divId);
-  console.log("myDiv", myDiv);
   myDiv.innerHTML += stuffToPrint;
 }
 // createBlogPosts: this function should loop through the BLOGS array and build up the html for each blog. It should call the writeToDom function for each blog.
 function createBlogPosts(blogArray) {
-    // take petNames and create DOM string
-    // call printToDom function
     for (var i = 0; i < blogArray.length; i++) {
         var blogContent = "";  // empties out the var which prevents it from compounding -- declares variable
       
@@ -109,7 +101,7 @@ function createBlogPosts(blogArray) {
         blogContent +=     "<p>" + blogArray[i].content + "</p>";
         blogContent += "</div>";
 
-        writeToDom(blogContent, "my-projects");
+        writeToDom(blogContent, "my-blogs");
 
     }
 }
