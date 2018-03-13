@@ -62,7 +62,7 @@ function writeToDom(stuffToPrint, divId) {
 
 // createProjectCards: this function should loop through the projects array and build up the html that you have on your projects page. It should call the writeToDom function for each project.
 function createProjectCards(projectsArray) {
-    for (var i = 0; i < projectsArray.length; i++);
+    for (var i = 0; i < projectsArray.length; i++) {
         var projectsContent = "";   
         projectsContent += '<article class="backdrop">';
         projectsContent +=      "<h2>" + projectsArray[i].title + "</h2>";
@@ -71,6 +71,7 @@ function createProjectCards(projectsArray) {
         projectsContent += '</article>';
 
     writeToDom(projectsContent, "my-projects");
+    }
 }
 
 createProjectCards(projects);
