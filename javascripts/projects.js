@@ -9,7 +9,7 @@ var projects = [
         title: "Project 1",
         description: "Description of this project",
         link: "https://github.com/aliciazaludova",
-        imgSrc: "../../images/github-project.png",
+        imgSrc: "images/github-project.png",
         alt: "Github project logo"
 
     },
@@ -80,7 +80,7 @@ function createProjectCards(projectsArray) {
         projectsContent += '<article class="backdrop">';
         projectsContent += "<h2>" + projectsArray[i].title + "</h2>";
         projectsContent += "<p><em>" + projectsArray[i].description + "</em></p>"
-        projectsContent += "<a href=" + projectsArray[i].link + "target=_'blank' <img src=" + projectsArray[i].imgSrc + "alt=" + projectsArray[i].alt + "></a>";   
+        projectsContent += "<a href=" + projectsArray[i].link + "target=_'blank'> <img src=" + projectsArray[i].imgSrc + "alt=" + projectsArray[i].alt + "></a>";   
         projectsContent += "</article>";
 
         // <article class="backdrop">
