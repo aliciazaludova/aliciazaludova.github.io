@@ -19,7 +19,7 @@ var blogs = [
     id: "blog2", 
     title: "Week 2", 
     theme: "Tip-toeing through the woods...",
-    content: "This week we were introduced to using the terminal in tandem with GitHub. I felt like Dorothy tip-toeing through the forest of the fighting trees in the borderlands of Oz. GitHub is an unsightly, un(user)-friendly zone with an obstacle course of switches and pulleys. For comfort I lean in and hug my little dog Toto. I mean, my furry cat Frootie."
+    content: "This week we were introduced to using the terminal in tandem with GitHub. I felt like Dorothy creeping carefully through the forest of the fighting trees in the borderlands of Oz. GitHub is an unsightly, un(user)-friendly zone with an obstacle course of switches and pulleys. For comfort I lean in and hug my little dog Toto. I mean, my furry cat Frootie."
     },
     {
     id: "blog3", 
