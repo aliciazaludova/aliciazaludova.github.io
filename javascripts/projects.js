@@ -77,12 +77,13 @@ function writeToDom(stuffToPrint, divId) {
 function createProjectCards(projectsArray) {
     for (var i = 0; i < projectsArray.length; i++) {
         var projectsContent = "";   
-        projectsContent += '<article class="backdrop">';
+        projectsContent += "<article class='backdrop'>";
         projectsContent += "<h2>" + projectsArray[i].title + "</h2>";
-        projectsContent += "<p><em>" + projectsArray[i].description + "</em></p>"
-        projectsContent += "<a href=" + projectsArray[i].link + "target=_'blank'> <img src=" + projectsArray[i].imgSrc + "alt=" + projectsArray[i].alt + "></a>";   
+        projectsContent += "<p><em>" + projectsArray[i].description + "</em></p>";
+        projectsContent += "<a href=" + projectsArray[i].link + "target=_'blank'><img src=" + projectsArray[i].imgSrc + "alt=" + projectsArray[i].alt + "></a>";   
         projectsContent += "</article>";
 
+        // HERE IS THE HTML PLACED INTO THE ABOVE=================
         // <article class="backdrop">
         // <h2>Project 6</h2>
         // <p><em>Description of project 6</em></p>
