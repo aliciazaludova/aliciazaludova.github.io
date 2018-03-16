@@ -8,37 +8,50 @@ var projects = [
         id: "project1",
         title: "Project 1",
         description: "Description of this project",
-        link: "https://github.com/aliciazaludova"
+        link: "https://github.com/aliciazaludova",
+        imgSrc: "images/github-project.png",
+        alt: "Github project logo"
+
     },
     {
         id: "project2",
         title: "Project 2",
         description: "Description of this project",
-        link: "https://github.com/aliciazaludova"
+        link: "https://github.com/aliciazaludova",
+        imgSrc: "../images/github-project.png",
+        alt: "Github project logo"
     },
     {
         id: "project3",
         title: "Project 3",
         description: "Description of this project",
-        link: "https://github.com/aliciazaludova"
+        link: "https://github.com/aliciazaludova",
+        imgSrc: "../images/github-project.png",
+        alt: "Github project logo"
     },
     {
         id: "project4",
         title: "Project 4",
         description: "Description of this project",
-        link: "https://github.com/aliciazaludova"
+        link: "https://github.com/aliciazaludova",
+        imgSrc: "../images/github-project.png",
+        alt: "Github project logo"
     },
     {
         id: "project5",
         title: "Project 5",
         description: "Description of this project",
-        link: "https://github.com/aliciazaludova"
+        link: "https://github.com/aliciazaludova",
+        imgSrc: "../images/github-project.png",
+        alt: "Github project logo"
     },
     {
         id: "project6",
         title: "Project 6",
         description: "Description of this project",
-        link: "https://github.com/aliciazaludova"
+        link: "https://github.com/aliciazaludova",
+        imgSrc: "../images/github-project.png",
+        alt: "Github project logo"
     }
 ]
 // Put all the objects in a single array called projects.
@@ -64,11 +77,18 @@ function writeToDom(stuffToPrint, divId) {
 function createProjectCards(projectsArray) {
     for (var i = 0; i < projectsArray.length; i++) {
         var projectsContent = "";   
-        projectsContent += '<article class="backdrop">';
-        projectsContent +=      "<h2>" + projectsArray[i].title + "</h2>";
-        projectsContent +=          "<p><em>" + projectsArray[i].description + "</em></p>"
-        projectsContent +=             "<a>" + projectsArray[i].link + "</a>";   // THERE IS MORE TO THIS--THE BUTTON IMAGE
-        projectsContent += '</article>';
+        projectsContent += "<article class='backdrop'>";
+        projectsContent += "<h2>" + projectsArray[i].title + "</h2>";
+        projectsContent += "<p><em>" + projectsArray[i].description + "</em></p>";
+        projectsContent += "<a href=" + projectsArray[i].link + "target=_'blank'><img src=" + projectsArray[i].imgSrc + "alt=" + projectsArray[i].alt + "></a>";   
+        projectsContent += "</article>";
+
+        // HERE IS THE HTML PLACED INTO THE ABOVE=================
+        // <article class="backdrop">
+        // <h2>Project 6</h2>
+        // <p><em>Description of project 6</em></p>
+        // <a href="https://github.com/aliciazaludova" target="_blank">  <img src="images/github-project.png" alt="github project logo"></a>
+        // </article> -->
 
     writeToDom(projectsContent, "my-projects");
     }
