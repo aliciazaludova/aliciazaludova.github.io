@@ -65,10 +65,19 @@ function createProjectCards(projectsArray) {
     for (var i = 0; i < projectsArray.length; i++) {
         var projectsContent = "";   
         projectsContent += '<article class="backdrop">';
-        projectsContent +=      "<h2>" + projectsArray[i].title + "</h2>";
-        projectsContent +=          "<p><em>" + projectsArray[i].description + "</em></p>"
-        projectsContent +=             "<a>" + projectsArray[i].link + "</a>";   // THERE IS MORE TO THIS--THE BUTTON IMAGE
+        projectsContent +="<h2>" + projectsArray[i].title + "</h2>";
+        projectsContent += "<p><em>" + projectsArray[i].description + "</em></p>";
+        projectsContent += "<a href='"+ projectsArray[i].link + "'>";
+        projectsContent += "<img src='images/github-project.png' alt='github project logo'>";
+        projectsContent += "</a>";   
+        // THERE IS MORE TO THIS--THE BUTTON IMAGE
         projectsContent += '</article>';
+
+        // <article class="backdrop">
+        //  <h2>Project 2</h2>
+        //    <p><em>Description of project 2</em></p>
+        //      <a href='www.https://github.com/aliciazaludova' target="_blank">  <img src="images/github-project.png" alt="github project logo"></a>
+        // </article>
 
     writeToDom(projectsContent, "my-projects");
     }
