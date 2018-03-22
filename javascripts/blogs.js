@@ -19,7 +19,7 @@ var blogs = [
     id: "blog2", 
     title: "Week 2", 
     theme: "Tip-toeing through the woods...",
-    content: "This week we were introduced to using the terminal in tandem with GitHub. I felt like Dorothy tip-toeing through the forest of the fighting trees in the borderlands of Oz. GitHub is an unsightly, un(user)-friendly zone with an obstacle course of switches and pulleys. For comfort I lean in and hug my little dog Toto. I mean, my furry cat Frootie."
+    content: "This week we were introduced to using the terminal in tandem with GitHub. I felt like Dorothy creeping carefully through the forest of the fighting trees in the borderlands of Oz. GitHub is an unsightly, un(user)-friendly zone with an obstacle course of switches and pulleys. For comfort I lean in and hug my little dog Toto. I mean, my furry cat Frootie."
     },
     {
     id: "blog3", 
@@ -36,8 +36,8 @@ var blogs = [
     {
     id: "blog5", 
     title: "Week 5", 
-    theme: "Theme",
-    content: "I will write something here."
+    theme: "Teamwork is challenging!",
+    content: "Everything was peaceful until my team came to a bump in the road (Wizard of Oz reference spared). They decided that I should determine the style of the site (for a metal band called The Frog Sayeth Croak) and then we would all take a look. This aspect of the project is minor, as the goal was to practice GitHub flow with a team and to practice JS, as each page must contain a loop and be written with functions. The directions explained that we would receive extra points for a site that looked like an old-school MySpace page. FUN!!! My vision was tacky and campy, something created by a newbie coder who was a fan of the band. It made sense to me since I was a newbie, and we were not using any frameworks or libraries. How about 'murky, green, dark, kitschy, sorta bad taste'? Swampy colors had already been decided on by the group. I set neon green to outline images upon hover and a putrid rust color to glow behind some text. A Halloweeny Google font called 'Eater' for headers and tacky bullets left on lists. SLICK!!! Everything would be set on a linear gradient background from grey to green. Bloated with satisfaction, I'd decided I'd spent enough time on it and shared it with the group. The first reaction from a teammate was 'METAL'. The second teammate was not so accepting. I realized then that we should have discussed more in depth the character of the band and how it will be expressed. He explained that regardless of whether 'tacky' is deliberately 'tacky' or unintentionlly so, it is still just 'tacky' and that we couldn't do it this way because the project would be going into our portfolios. Wait! Not true! These early team projects aren't actually meant as portfolio material. They are places where we are supposed to make mistakes and learn. I admit I was disappointed that my aesthetic was not appreciated, or maybe misunderstood, but I knew we all needed to discuss the theme further and come up with something mutually agreed upon."
     },
     {
     id: "blog6", 
