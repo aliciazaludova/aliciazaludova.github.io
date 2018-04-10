@@ -3,7 +3,7 @@ console.log("projects page");
 // Projects Page
 // Take the information from your projects html and create an object for each project. Each project should have a unique id.
 
-var projects = [
+const projects = [
     {
         id: "project1",
         title: "Project 1",
@@ -68,22 +68,22 @@ var projects = [
 // Create two functions:
 
 // writeToDom: this function should accept a string and print it to a div with an id of my-projects
-function writeToDom(stuffToPrint, divId) {
-    var myDiv = document.getElementById(divId);
+const writeToDom = (stuffToPrint, divId) => {
+    const myDiv = document.getElementById(divId);
     myDiv.innerHTML += stuffToPrint;
 }
 
 // createProjectCards: this function should loop through the projects array and build up the html that you have on your projects page. It should call the writeToDom function for each project.
-function createProjectCards(projectsArray) {
+const createProjectCards = (projectsArray) => {
     for (var i = 0; i < projectsArray.length; i++) {
-        var projectsContent = "";   
-        projectsContent += '<article class="backdrop">';
-        projectsContent +="<h2>" + projectsArray[i].title + "</h2>";
-        projectsContent += "<p><em>" + projectsArray[i].description + "</em></p>";
-        projectsContent += "<a href='"+ projectsArray[i].link + "'>";
-        projectsContent += "<img src='images/github-project.png' alt='github project logo'>";
-        projectsContent += "</a>";   
-        projectsContent += '</article>';
+        let projectsContent = "";   
+        projectsContent += `<article class="backdrop">`;
+        projectsContent +=`<h2>${projectsArray[i].title}</h2>`;
+        projectsContent += `<p><em>${projectsArray[i].description}</em></p>`;
+        projectsContent += `<a href="${projectsArray[i].link}">`;
+        projectsContent += `<img src='images/github-project.png' alt='github project logo'>`;
+        projectsContent += `</a>`;   
+        projectsContent += `</article>`;
         // It hadn't worked with the below. Quotes in <a href part were off.
         // projectsContent += "<article class='backdrop'>";
         // projectsContent += "<h2>" + projectsArray[i].title + "</h2>";
