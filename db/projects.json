@@ -1,0 +1,54 @@
+{
+  "projects":
+    [
+      {
+        "id": "project1",
+        "title": "Project 1",
+        "description": "Description of this project",
+        "link": "https://github.com/aliciazaludova",
+        "imgSrc": "images/github-project.png",
+        "alt": "Github project logo"
+      },
+      {
+        "id": "project2",
+        "title": "Project 2",
+        "description": "Description of this project",
+        "link": "https://github.com/aliciazaludova",
+        "imgSrc": "images/github-project.png",
+        "alt": "Github project logo"
+      },
+      {
+        "id": "project3",
+        "title": "Project 3",
+        "description": "Description of this project",
+        "link": "https://github.com/aliciazaludova",
+        "imgSrc": "images/github-project.png",
+        "alt": "Github project logo"
+      },
+      {
+        "id": "project4",
+        "title": "Project 4",
+        "description": "Description of this project",
+        "link": "https://github.com/aliciazaludova",
+        "imgSrc": "images/github-project.png",
+        "alt": "Github project logo"
+      },
+      {
+        "id": "project5",
+        "title": "Project 5",
+        "description": "Description of this project",
+        "link": "https://github.com/aliciazaludova",
+        "imgSrc": "images/github-project.png",
+        "alt": "Github project logo"
+      },
+      {
+        "id": "project6",
+        "title": "Project 6",
+        "description": "Description of this project",
+        "link": "https://github.com/aliciazaludova",
+        "imgSrc": "images/github-project.png",
+        "alt": "Github project logo"
+      }
+    ]
+}
+    
