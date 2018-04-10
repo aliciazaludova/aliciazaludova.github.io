@@ -68,13 +68,13 @@ const projects = [
 // Create two functions:
 
 // writeToDom: this function should accept a string and print it to a div with an id of my-projects
-function writeToDom(stuffToPrint, divId) {
+const writeToDom = (stuffToPrint, divId) => {
     const myDiv = document.getElementById(divId);
     myDiv.innerHTML += stuffToPrint;
 }
 
 // createProjectCards: this function should loop through the projects array and build up the html that you have on your projects page. It should call the writeToDom function for each project.
-function createProjectCards(projectsArray) {
+const createProjectCards = (projectsArray) => {
     for (var i = 0; i < projectsArray.length; i++) {
         let projectsContent = "";   
         projectsContent += `<article class="backdrop">`;
