@@ -19,13 +19,6 @@ function executeThisCodeAfterFileLoaded () {
   buildProjectCards(data.projects);
   console.log(executeThisCodeAfterFileLoaded);
 }
-
-// writeToDom: this function should accept a string and print it to a div with an id of my-projects
-const writeToDom = (domString, divId) => {
-    const myDiv = document.getElementById(divId);
-    myDiv.innerHTML += domString;
-}
-
 // createProjectCards: this function should loop through the projects array and build up the html that you have on your projects page. It should call the writeToDom function for each project.
 const buildProjectCards = (projectsArray) => {
     for (var i = 0; i < projectsArray.length; i++) {
@@ -42,8 +35,12 @@ const buildProjectCards = (projectsArray) => {
     }
 }
 
-buildProjectCards(projects);
+// writeToDom: this function should accept a string and print it to a div with an id of my-projects
+const writeToDom = (domString, divId) => {
+  const myDiv = document.getElementById(divId);
+  myDiv.innerHTML += domString;
+}
+
 startApplication();
 
-// The last line of this file should be: createProjectCards();
 // notes ====================================
