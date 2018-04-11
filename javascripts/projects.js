@@ -1,17 +1,28 @@
 console.log("projects page");
 
-// Create two functions:
-
-// writeToDom: this function should accept a string and print it to a div with an id of my-projects
-const writeToDom = (stuffToPrint, divId) => {
-    const myDiv = document.getElementById(divId);
-    myDiv.innerHTML += stuffToPrint;
+const startApplication = () => {
+  let myRequest = new XMLHttpRequest();
+  myRequest.addEventListener("load", executeThisCodeAfterFileLoaded);
+  myRequest.addEventListener("error", executeThisCodeIfXHRFails);
+  myRequest.open("GET", "../db/projects.json");
+  myRequest.send();
+  console.log(startApplication);
+  console.log(myRequest);
 }
 
+function executeThisCodeIfXHRFails () {
+  console.log("somehing broke");
+}
+
+function executeThisCodeAfterFileLoaded () {
+  const data = JSON.parse(this.responseText);
+  buildProjectCards(data.projects);
+  console.log(executeThisCodeAfterFileLoaded);
+}
 // createProjectCards: this function should loop through the projects array and build up the html that you have on your projects page. It should call the writeToDom function for each project.
-const createProjectCards = (projectsArray) => {
+const buildProjectCards = (projectsArray) => {
     for (var i = 0; i < projectsArray.length; i++) {
-        var projectsContent = "";   
+        let projectsContent = "";   
         projectsContent += '<article class="backdrop">';
         projectsContent +="<h2>" + projectsArray[i].title + "</h2>";
         projectsContent += "<p><em>" + projectsArray[i].description + "</em></p>";
@@ -24,6 +35,12 @@ const createProjectCards = (projectsArray) => {
     }
 }
 
-createProjectCards(projects);
+// writeToDom: this function should accept a string and print it to a div with an id of my-projects
+const writeToDom = (domString, divId) => {
+  const myDiv = document.getElementById(divId);
+  myDiv.innerHTML += domString;
+}
 
-// The last line of this file should be: createProjectCards();
+startApplication();
+
+// notes ====================================
