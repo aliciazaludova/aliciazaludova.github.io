@@ -9,16 +9,16 @@ This is a site for my own personal branding. As I proceed through milestones at 
 - XHR requests
 
 ### Features
-- The site has a landing page with an introduction to myself.
+- The site has a landing page with an introduction and my resume.
 - There are two pages that use XHR requests to JSON files: the projects page and the blogs page.
 - The site includes a page for fun facts about me as well as a contact page.
 
 ## Screenshots
 
 ## How to Run
-```1. Go to: `https://www.npmjs.com/package/http-server` and install "http-server".  
+1. Go to: `https://www.npmjs.com/package/http-server` and install "http-server".  
 2. Navigate to the project folder in command line interface and type: `http-server -p 8080`  
-3. This will show at: `http://localhost:8080` in your internet browser.```
+3. This will show at: `http://localhost:8080` in your internet browser.
 
 ## Contributors
 Alicia Zaludova
