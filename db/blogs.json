@@ -46,8 +46,8 @@
             {
             "id": "blog8",
             "title": "Week 8",
-            "theme": "Theme",
-            "content": "I will write something here."
+            "theme": "Bootstrap is super neat.",
+            "content": "Over the last couple weeks we've used Bootstrap a few times in class and in exercises. It makes sense that someone would develop a framework that bundles multiple stylings into single classes; the more styling you do, the more you see that you've often been applying the same styles together. I was surprised at how quickly we were able to come out with a polished looking 'Superheroes' site in a code-along. The first thing we applied was a navbar. I learned that you can use Bootstrap code and then reduce it if it contains more than you need it to. The process of seeing what classes are styling what elements in order to take only what you need seems like a good way to learn about it. I'm looking forward to seeing what else it can do."
             },
             {
             "id": "blog9",
