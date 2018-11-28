@@ -3,11 +3,11 @@
     [
       {
         "id": "project1",
-        "title": "Project 1",
-        "description": "Description of this project",
-        "link": "https://github.com/aliciazaludova",
-        "imgSrc": "images/github-project.png",
-        "alt": "Github project logo"
+        "title": "Rhino Splits",
+        "description": "This is the UX project I completed in the UI-UX for Digital Product Design course at NSS",
+        "link": "rhinosplits.html",
+        "imgSrc": "images/ux-project-button.png",
+        "alt": "UX project logo"
       },
       {
         "id": "project2",

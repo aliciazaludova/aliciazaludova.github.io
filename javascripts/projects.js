@@ -27,7 +27,7 @@ const buildProjectCards = (projectsArray) => {
         projectsContent +="<h2>" + projectsArray[i].title + "</h2>";
         projectsContent += "<p><em>" + projectsArray[i].description + "</em></p>";
         projectsContent += "<a href='"+ projectsArray[i].link + "'>";
-        projectsContent += "<img src='images/github-project.png' alt='github project logo'>";
+        projectsContent += "<img src='"+ projectsArray[i].imgSrc +"' alt='"+ projectsArray[i].alt +"'>";
         projectsContent += "</a>";   
         projectsContent += '</article>';
         
