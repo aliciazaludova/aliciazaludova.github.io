@@ -110,9 +110,15 @@ h2 {
     to right, 
     #bec5b2 0%, 
     #bec5b2 50%, 
+<<<<<<< HEAD
+    #c5cbba 50%, /* was greenish gold #f1ea45 */
+    #c5cbba 100%
+    );
+=======
     #c5cbba 50%, /* was f1ea45 */
     #c5cbba 100%
     ); 
+>>>>>>> master
 }
 
 .container p:last-of-type {
